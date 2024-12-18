@@ -30,7 +30,7 @@ def speak(text):
     engine.runAndWait()
 
 
-def recognize_speach():
+def recognize_speech():
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening...")
@@ -62,7 +62,7 @@ def wikipedia_summary(query):
 
 wish_me()
 while True:
-    query = recognize_speach().lower()
+    query = recognize_speech().lower()
     if "exit" in query:
         break
     elif "the time" in query:
